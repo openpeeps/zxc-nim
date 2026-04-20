@@ -36,7 +36,22 @@ decompressBytes(compressed, decompressed, false)
 assert decompressed.bytesToString == original
 ```
 
-...
+Use ZXC's streaming API for large data or when you want to enjoy multi-threaded performance
+```nim
+let testFile = "test_zxc_input.txt"
+let compressedFile = "test_zxc_input.txt.zxc"
+let decompressedFile = "test_zxc_input_out.txt"
+let content = "ZXC file streaming test!\nLine 2.\nLine 3."
+
+compressFile(testFile, compressedFile, level = ZXC_LEVEL_DEFAULT, checksumEnabled = true)
+decompressFile(compressedFile, decompressedFile, checksumEnabled = true)
+
+assert readFile(decompressedFile) == content
+```
+
+Check more examples in the [tests directory](https://github.com/openpeeps/zxc-nim/blob/main/tests/test1.nim)
+
+_todo: example with reusable contexts and seekable archives_
 
 ### ❤ Contributions & Support
 - 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/zxc-nim/issues)
