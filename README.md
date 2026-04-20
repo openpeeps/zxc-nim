@@ -23,6 +23,9 @@
 - Reusable contexts for high-frequency call sites
 - **Seekable archives** (Optional seek table for O(1) random access)
 
+## Installation
+Use your favorite package manager to install the ZXC library, or [build it from source](https://github.com/hellobertrand/zxc#option-5-building-from-source).
+
 ## Examples
 
 Compressing and decompressing strings with mutable buffers
