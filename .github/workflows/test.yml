@@ -25,6 +25,13 @@ jobs:
         with:
           nim-version: ${{ matrix.nim-version }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+      
+      
+      - name: "Install XZC":
+        run: |
+          wget https://github.com/hellobertrand/zxc/releases/download/v0.10.0/zxc-linux-x86_64.tar.gz -O zxc.tar.gz
+          tar -xzf zxc.tar.gz -C /usr/local
+
       - run: nimble install -Y
-      - run: nim c -r src/${{ github.event.repository.name }}.nim
+      - run: nim c src/zxc.nim
       - run: nimble test
