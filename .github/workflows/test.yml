@@ -29,8 +29,11 @@ jobs:
       
       - name: "Install XZC"
         run: |
-          wget https://github.com/hellobertrand/zxc/releases/download/v0.10.0/zxc-linux-x86_64.tar.gz -O zxc.tar.gz
-          sudo tar -xzf zxc.tar.gz -C /usr/local
+          git clone https://github.com/hellobertrand/zxc.git zxclib
+          cd zxclib
+          cmake -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --parallel
+          sudo cmake --install build
 
       - run: nimble install -Y
       - run: nim c src/zxc.nim
