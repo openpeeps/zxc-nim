@@ -30,7 +30,7 @@ jobs:
       - name: "Install XZC"
         run: |
           wget https://github.com/hellobertrand/zxc/releases/download/v0.10.0/zxc-linux-x86_64.tar.gz -O zxc.tar.gz
-          tar -xzf zxc.tar.gz -C /usr/local
+          sudo tar -xzf zxc.tar.gz -C /usr/local
 
       - run: nimble install -Y
       - run: nim c src/zxc.nim
