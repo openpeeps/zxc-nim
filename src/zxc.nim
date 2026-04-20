@@ -192,34 +192,3 @@ proc decompressFile*(inputPath, outputPath: string, checksumEnabled = false) =
   defer: close(fOut)
 
   discard decompressStream(fIn, fOut, checksumEnabled = checksumEnabled)
-
-when isMainModule:
-  {.passC:"-I/usr/local/include", passL:"-L/usr/local/lib -lzxc".}
-  
-  block:
-    var compBytes: CompZscBytes
-    let s = """
-Features
-    Fast decompression: Optimized for read-heavy workloads
-    5 compression levels: Trade off speed vs ratio
-    Optional checksums: Disabled by default for maximum performance, enable for data integrity
-    File streaming: Multi-threaded compression/decompression for large files
-    Zero-allocation API: compress_to and decompress_to for buffer reuse
-    Pure Rust API: Safe, idiomatic interface over the C library
-"""
-    s.compress(compBytes, level = ZXC_LEVEL_COMPACT, checksumEnabled = true)
-    
-    var decompBytes: DecompZscBytes
-    decompress(compBytes, decompBytes)
-
-    echo compBytes
-    echo "in:  ", s.len
-    echo "cmp: ", compBytes.len
-    echo "out: ", decompBytes.len
-    echo "decompressed matches original: ", bytesToString(decompBytes) == s
-  
-  # block:
-  #   compressFile("tripadvisor_european_restaurants.csv",
-  #     "tripadvisor_european_restaurants.csv.zxc",
-  #     level = ZXC_LEVEL_FASTEST, checksumEnabled = false)
-  #   decompressFile("tripadvisor_european_restaurants.csv.zxc", "tripadvisor_european_restaurants_decompressed_2.csv")
