@@ -27,7 +27,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       
       
-      - name: "Install XZC":
+      - name: "Install XZC"
         run: |
           wget https://github.com/hellobertrand/zxc/releases/download/v0.10.0/zxc-linux-x86_64.tar.gz -O zxc.tar.gz
           tar -xzf zxc.tar.gz -C /usr/local
