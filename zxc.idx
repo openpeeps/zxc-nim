@@ -1,20 +1,20 @@
 nimTitle	zxc	zxc.html	module zxc		0
-nim	ZxcProgressCallback	zxc.html#ZxcProgressCallback	type ZxcProgressCallback		12
-nim	ZxcCompressionLevel	zxc.html#ZxcCompressionLevel	type ZxcCompressionLevel		13
-nim	CompZscBytes	zxc.html#CompZscBytes	type CompZscBytes		14
-nim	DecompZscBytes	zxc.html#DecompZscBytes	type DecompZscBytes		15
-nim	ZxcError	zxc.html#ZxcError	object ZxcError		16
-nim	raiseZxc	zxc.html#raiseZxc,int64,string	proc raiseZxc(code: int64; msg: string)		19
-nim	bytesToString	zxc.html#bytesToString,openArray[byte]	proc bytesToString(b: openArray[byte]): string		25
-nim	stringToBytes	zxc.html#stringToBytes,string	proc stringToBytes(s: string): seq[byte]		32
-nim	compressBytes	zxc.html#compressBytes,openArray[byte],CompZscBytes,zxc_compression_level_t,bool	proc compressBytes(input: openArray[byte]; output: var CompZscBytes;\n              level: ZxcCompressionLevel; checksumEnabled: bool)		39
-nim	decompressBytes	zxc.html#decompressBytes,openArray[byte],DecompZscBytes,bool	proc decompressBytes(compressed: openArray[byte]; output: var DecompZscBytes;\n                checksumEnabled: bool)		62
-nim	compress	zxc.html#compress,string,CompZscBytes,zxc_compression_level_t	proc compress(s: string; output: var CompZscBytes;\n         level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT; checksumEnabled = false)		95
-nim	decompress	zxc.html#decompress,openArray[byte],DecompZscBytes,bool	proc decompress(compressed: openArray[byte]; output: var DecompZscBytes;\n           checksumEnabled: bool = false)		101
-nim	`$`	zxc.html#$,DecompZscBytes	proc `$`(decompZscBytes: DecompZscBytes): string		106
-nim	compressString	zxc.html#compressString,string,zxc_compression_level_t	proc compressString(s: string; level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n               checksumEnabled = false): CompZscBytes		110
-nim	decompressString	zxc.html#decompressString,openArray[byte],bool	proc decompressString(compressed: openArray[byte]; checksumEnabled: bool = false): string		117
-nim	compressStream	zxc.html#compressStream,File,File,zxc_compression_level_t,cint,csize_t,ZxcProgressCallback,pointer	proc compressStream(fIn, fOut: File; level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n               nThreads: cint = 0; blockSize: csize_t = 0;\n               checksumEnabled = true; seekable = false;\n               progressCb: ZxcProgressCallback = nil; userData: pointer = nil): int64		129
-nim	decompressStream	zxc.html#decompressStream,File,File,cint,ZxcProgressCallback,pointer	proc decompressStream(fIn, fOut: File; nThreads: cint = 0; checksumEnabled = true;\n                 progressCb: ZxcProgressCallback = nil; userData: pointer = nil): int64		146
-nim	compressFile	zxc.html#compressFile,string,string,zxc_compression_level_t	proc compressFile(inputPath, outputPath: string;\n             level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n             checksumEnabled = false)		162
-nim	decompressFile	zxc.html#decompressFile,string,string	proc decompressFile(inputPath, outputPath: string; checksumEnabled = false)		182
+nim	ZxcProgressCallback	zxc.html#ZxcProgressCallback	type ZxcProgressCallback		13
+nim	ZxcCompressionLevel	zxc.html#ZxcCompressionLevel	type ZxcCompressionLevel		14
+nim	CompZscBytes	zxc.html#CompZscBytes	type CompZscBytes		15
+nim	DecompZscBytes	zxc.html#DecompZscBytes	type DecompZscBytes		16
+nim	ZxcError	zxc.html#ZxcError	object ZxcError		17
+nim	raiseZxc	zxc.html#raiseZxc,int64,string	proc raiseZxc(code: int64; msg: string)		20
+nim	bytesToString	zxc.html#bytesToString,openArray[byte]	proc bytesToString(b: openArray[byte]): string		26
+nim	stringToBytes	zxc.html#stringToBytes,string	proc stringToBytes(s: string): seq[byte]		33
+nim	compressBytes	zxc.html#compressBytes,openArray[byte],CompZscBytes,zxc_compression_level_t,bool	proc compressBytes(input: openArray[byte]; output: var CompZscBytes;\n              level: ZxcCompressionLevel; checksumEnabled: bool)		40
+nim	decompressBytes	zxc.html#decompressBytes,openArray[byte],DecompZscBytes,bool	proc decompressBytes(compressed: openArray[byte]; output: var DecompZscBytes;\n                checksumEnabled: bool)		63
+nim	compress	zxc.html#compress,string,CompZscBytes,zxc_compression_level_t	proc compress(s: string; output: var CompZscBytes;\n         level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT; checksumEnabled = false)		96
+nim	decompress	zxc.html#decompress,openArray[byte],DecompZscBytes,bool	proc decompress(compressed: openArray[byte]; output: var DecompZscBytes;\n           checksumEnabled: bool = false)		102
+nim	`$`	zxc.html#$,DecompZscBytes	proc `$`(decompZscBytes: DecompZscBytes): string		107
+nim	compressString	zxc.html#compressString,string,zxc_compression_level_t	proc compressString(s: string; level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n               checksumEnabled = false): CompZscBytes		111
+nim	decompressString	zxc.html#decompressString,openArray[byte],bool	proc decompressString(compressed: openArray[byte]; checksumEnabled: bool = false): string		118
+nim	compressStream	zxc.html#compressStream,File,File,zxc_compression_level_t,cint,csize_t,ZxcProgressCallback,pointer	proc compressStream(fIn, fOut: File; level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n               nThreads: cint = 0; blockSize: csize_t = 0;\n               checksumEnabled = true; seekable = false;\n               progressCb: ZxcProgressCallback = nil; userData: pointer = nil): int64		130
+nim	decompressStream	zxc.html#decompressStream,File,File,cint,ZxcProgressCallback,pointer	proc decompressStream(fIn, fOut: File; nThreads: cint = 0; checksumEnabled = true;\n                 progressCb: ZxcProgressCallback = nil; userData: pointer = nil): int64		147
+nim	compressFile	zxc.html#compressFile,string,string,zxc_compression_level_t	proc compressFile(inputPath, outputPath: string;\n             level: ZxcCompressionLevel = ZXC_LEVEL_DEFAULT;\n             checksumEnabled = false)		163
+nim	decompressFile	zxc.html#decompressFile,string,string	proc decompressFile(inputPath, outputPath: string; checksumEnabled = false)		183

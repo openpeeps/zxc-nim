@@ -1,51 +1,51 @@
 nimTitle	bindings	zxc/bindings.html	module zxc/bindings		0
-nim	zxc_nim_progress_cb_t	zxc/bindings.html#zxc_nim_progress_cb_t	type zxc_nim_progress_cb_t		8
-nim	ZXC_BLOCK_SIZE_MIN_LOG2	zxc/bindings.html#ZXC_BLOCK_SIZE_MIN_LOG2	const ZXC_BLOCK_SIZE_MIN_LOG2		51
-nim	ZXC_BLOCK_SIZE_MAX_LOG2	zxc/bindings.html#ZXC_BLOCK_SIZE_MAX_LOG2	const ZXC_BLOCK_SIZE_MAX_LOG2		52
-nim	ZXC_BLOCK_SIZE_DEFAULT	zxc/bindings.html#ZXC_BLOCK_SIZE_DEFAULT	const ZXC_BLOCK_SIZE_DEFAULT		53
-nim	ZXC_BLOCK_SIZE_MIN	zxc/bindings.html#ZXC_BLOCK_SIZE_MIN	const ZXC_BLOCK_SIZE_MIN		54
-nim	ZXC_BLOCK_SIZE_MAX	zxc/bindings.html#ZXC_BLOCK_SIZE_MAX	const ZXC_BLOCK_SIZE_MAX		55
-nim	ZXC_OK	zxc/bindings.html#ZXC_OK	const ZXC_OK		57
-nim	ZXC_ERROR_MEMORY	zxc/bindings.html#ZXC_ERROR_MEMORY	const ZXC_ERROR_MEMORY		58
-nim	ZXC_ERROR_DST_TOO_SMALL	zxc/bindings.html#ZXC_ERROR_DST_TOO_SMALL	const ZXC_ERROR_DST_TOO_SMALL		59
-nim	ZXC_ERROR_SRC_TOO_SMALL	zxc/bindings.html#ZXC_ERROR_SRC_TOO_SMALL	const ZXC_ERROR_SRC_TOO_SMALL		60
-nim	ZXC_ERROR_BAD_MAGIC	zxc/bindings.html#ZXC_ERROR_BAD_MAGIC	const ZXC_ERROR_BAD_MAGIC		61
-nim	ZXC_ERROR_BAD_VERSION	zxc/bindings.html#ZXC_ERROR_BAD_VERSION	const ZXC_ERROR_BAD_VERSION		62
-nim	ZXC_ERROR_BAD_HEADER	zxc/bindings.html#ZXC_ERROR_BAD_HEADER	const ZXC_ERROR_BAD_HEADER		63
-nim	ZXC_ERROR_BAD_CHECKSUM	zxc/bindings.html#ZXC_ERROR_BAD_CHECKSUM	const ZXC_ERROR_BAD_CHECKSUM		64
-nim	ZXC_ERROR_CORRUPT_DATA	zxc/bindings.html#ZXC_ERROR_CORRUPT_DATA	const ZXC_ERROR_CORRUPT_DATA		65
-nim	ZXC_ERROR_BAD_OFFSET	zxc/bindings.html#ZXC_ERROR_BAD_OFFSET	const ZXC_ERROR_BAD_OFFSET		66
-nim	ZXC_ERROR_OVERFLOW	zxc/bindings.html#ZXC_ERROR_OVERFLOW	const ZXC_ERROR_OVERFLOW		67
-nim	ZXC_ERROR_IO	zxc/bindings.html#ZXC_ERROR_IO	const ZXC_ERROR_IO		68
-nim	ZXC_ERROR_NULL_INPUT	zxc/bindings.html#ZXC_ERROR_NULL_INPUT	const ZXC_ERROR_NULL_INPUT		69
-nim	ZXC_ERROR_BAD_BLOCK_TYPE	zxc/bindings.html#ZXC_ERROR_BAD_BLOCK_TYPE	const ZXC_ERROR_BAD_BLOCK_TYPE		70
-nim	ZXC_ERROR_BAD_BLOCK_SIZE	zxc/bindings.html#ZXC_ERROR_BAD_BLOCK_SIZE	const ZXC_ERROR_BAD_BLOCK_SIZE		71
-nim	zxc_compression_level_t	zxc/bindings.html#zxc_compression_level_t	enum zxc_compression_level_t		74
-nim	zxc_cctx	zxc/bindings.html#zxc_cctx	object zxc_cctx		85
-nim	zxc_dctx	zxc/bindings.html#zxc_dctx	object zxc_dctx		87
-nim	zxc_cctxPtr	zxc/bindings.html#zxc_cctxPtr	type zxc_cctxPtr		90
-nim	zxc_dctxPtr	zxc/bindings.html#zxc_dctxPtr	type zxc_dctxPtr		91
-nim	zxc_progress_callback_t	zxc/bindings.html#zxc_progress_callback_t	type zxc_progress_callback_t		93
-nim	zxc_compress_opts_t	zxc/bindings.html#zxc_compress_opts_t	object zxc_compress_opts_t		95
-nim	zxc_decompress_opts_t	zxc/bindings.html#zxc_decompress_opts_t	object zxc_decompress_opts_t		104
-nim	zxc_min_level	zxc/bindings.html#zxc_min_level	proc zxc_min_level(): cint		110
-nim	zxc_max_level	zxc/bindings.html#zxc_max_level	proc zxc_max_level(): cint		111
-nim	zxc_default_level	zxc/bindings.html#zxc_default_level	proc zxc_default_level(): cint		112
-nim	zxc_version_string	zxc/bindings.html#zxc_version_string	proc zxc_version_string(): cstring		113
-nim	zxc_compress_bound	zxc/bindings.html#zxc_compress_bound,csize_t	proc zxc_compress_bound(input_size: csize_t): uint64		115
-nim	zxc_compress	zxc/bindings.html#zxc_compress,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress(src: pointer; src_size: csize_t; dst: pointer;\n             dst_capacity: csize_t; opts: ptr zxc_compress_opts_t): int64		116
-nim	zxc_decompress	zxc/bindings.html#zxc_decompress,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress(src: pointer; src_size: csize_t; dst: pointer;\n               dst_capacity: csize_t; opts: ptr zxc_decompress_opts_t): int64		117
-nim	zxc_get_decompressed_size	zxc/bindings.html#zxc_get_decompressed_size,pointer,csize_t	proc zxc_get_decompressed_size(src: pointer; src_size: csize_t): uint64		118
-nim	zxc_compress_block_bound	zxc/bindings.html#zxc_compress_block_bound,csize_t	proc zxc_compress_block_bound(input_size: csize_t): uint64		120
-nim	zxc_compress_block	zxc/bindings.html#zxc_compress_block,zxc_cctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress_block(cctx: zxc_cctxPtr; src: pointer; src_size: csize_t;\n                   dst: pointer; dst_capacity: csize_t;\n                   opts: ptr zxc_compress_opts_t): int64		121
-nim	zxc_decompress_block	zxc/bindings.html#zxc_decompress_block,zxc_dctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress_block(dctx: zxc_dctxPtr; src: pointer; src_size: csize_t;\n                     dst: pointer; dst_capacity: csize_t;\n                     opts: ptr zxc_decompress_opts_t): int64		122
-nim	zxc_create_cctx	zxc/bindings.html#zxc_create_cctx,ptr.zxc_compress_opts_t	proc zxc_create_cctx(opts: ptr zxc_compress_opts_t): zxc_cctxPtr		124
-nim	zxc_free_cctx	zxc/bindings.html#zxc_free_cctx,zxc_cctxPtr	proc zxc_free_cctx(cctx: zxc_cctxPtr)		125
-nim	zxc_compress_cctx	zxc/bindings.html#zxc_compress_cctx,zxc_cctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress_cctx(cctx: zxc_cctxPtr; src: pointer; src_size: csize_t;\n                  dst: pointer; dst_capacity: csize_t;\n                  opts: ptr zxc_compress_opts_t): int64		126
-nim	zxc_create_dctx	zxc/bindings.html#zxc_create_dctx	proc zxc_create_dctx(): zxc_dctxPtr		127
-nim	zxc_free_dctx	zxc/bindings.html#zxc_free_dctx,zxc_dctxPtr	proc zxc_free_dctx(dctx: zxc_dctxPtr)		128
-nim	zxc_decompress_dctx	zxc/bindings.html#zxc_decompress_dctx,zxc_dctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress_dctx(dctx: zxc_dctxPtr; src: pointer; src_size: csize_t;\n                    dst: pointer; dst_capacity: csize_t;\n                    opts: ptr zxc_decompress_opts_t): int64		129
-nim	zxc_stream_compress	zxc/bindings.html#zxc_stream_compress,ptr.File,ptr.File,ptr.zxc_compress_opts_t	proc zxc_stream_compress(f_in: ptr File; f_out: ptr File;\n                    opts: ptr zxc_compress_opts_t): int64		134
-nim	zxc_stream_decompress	zxc/bindings.html#zxc_stream_decompress,ptr.File,ptr.File,ptr.zxc_decompress_opts_t	proc zxc_stream_decompress(f_in: ptr File; f_out: ptr File;\n                      opts: ptr zxc_decompress_opts_t): int64		135
-nim	zxc_stream_get_decompressed_size	zxc/bindings.html#zxc_stream_get_decompressed_size,ptr.File	proc zxc_stream_get_decompressed_size(f_in: ptr File): int64		136
-nim	zxc_error_name	zxc/bindings.html#zxc_error_name,cint	proc zxc_error_name(code: cint): cstring		138
+nim	zxc_nim_progress_cb_t	zxc/bindings.html#zxc_nim_progress_cb_t	type zxc_nim_progress_cb_t		9
+nim	ZXC_BLOCK_SIZE_MIN_LOG2	zxc/bindings.html#ZXC_BLOCK_SIZE_MIN_LOG2	const ZXC_BLOCK_SIZE_MIN_LOG2		52
+nim	ZXC_BLOCK_SIZE_MAX_LOG2	zxc/bindings.html#ZXC_BLOCK_SIZE_MAX_LOG2	const ZXC_BLOCK_SIZE_MAX_LOG2		53
+nim	ZXC_BLOCK_SIZE_DEFAULT	zxc/bindings.html#ZXC_BLOCK_SIZE_DEFAULT	const ZXC_BLOCK_SIZE_DEFAULT		54
+nim	ZXC_BLOCK_SIZE_MIN	zxc/bindings.html#ZXC_BLOCK_SIZE_MIN	const ZXC_BLOCK_SIZE_MIN		55
+nim	ZXC_BLOCK_SIZE_MAX	zxc/bindings.html#ZXC_BLOCK_SIZE_MAX	const ZXC_BLOCK_SIZE_MAX		56
+nim	ZXC_OK	zxc/bindings.html#ZXC_OK	const ZXC_OK		58
+nim	ZXC_ERROR_MEMORY	zxc/bindings.html#ZXC_ERROR_MEMORY	const ZXC_ERROR_MEMORY		59
+nim	ZXC_ERROR_DST_TOO_SMALL	zxc/bindings.html#ZXC_ERROR_DST_TOO_SMALL	const ZXC_ERROR_DST_TOO_SMALL		60
+nim	ZXC_ERROR_SRC_TOO_SMALL	zxc/bindings.html#ZXC_ERROR_SRC_TOO_SMALL	const ZXC_ERROR_SRC_TOO_SMALL		61
+nim	ZXC_ERROR_BAD_MAGIC	zxc/bindings.html#ZXC_ERROR_BAD_MAGIC	const ZXC_ERROR_BAD_MAGIC		62
+nim	ZXC_ERROR_BAD_VERSION	zxc/bindings.html#ZXC_ERROR_BAD_VERSION	const ZXC_ERROR_BAD_VERSION		63
+nim	ZXC_ERROR_BAD_HEADER	zxc/bindings.html#ZXC_ERROR_BAD_HEADER	const ZXC_ERROR_BAD_HEADER		64
+nim	ZXC_ERROR_BAD_CHECKSUM	zxc/bindings.html#ZXC_ERROR_BAD_CHECKSUM	const ZXC_ERROR_BAD_CHECKSUM		65
+nim	ZXC_ERROR_CORRUPT_DATA	zxc/bindings.html#ZXC_ERROR_CORRUPT_DATA	const ZXC_ERROR_CORRUPT_DATA		66
+nim	ZXC_ERROR_BAD_OFFSET	zxc/bindings.html#ZXC_ERROR_BAD_OFFSET	const ZXC_ERROR_BAD_OFFSET		67
+nim	ZXC_ERROR_OVERFLOW	zxc/bindings.html#ZXC_ERROR_OVERFLOW	const ZXC_ERROR_OVERFLOW		68
+nim	ZXC_ERROR_IO	zxc/bindings.html#ZXC_ERROR_IO	const ZXC_ERROR_IO		69
+nim	ZXC_ERROR_NULL_INPUT	zxc/bindings.html#ZXC_ERROR_NULL_INPUT	const ZXC_ERROR_NULL_INPUT		70
+nim	ZXC_ERROR_BAD_BLOCK_TYPE	zxc/bindings.html#ZXC_ERROR_BAD_BLOCK_TYPE	const ZXC_ERROR_BAD_BLOCK_TYPE		71
+nim	ZXC_ERROR_BAD_BLOCK_SIZE	zxc/bindings.html#ZXC_ERROR_BAD_BLOCK_SIZE	const ZXC_ERROR_BAD_BLOCK_SIZE		72
+nim	zxc_compression_level_t	zxc/bindings.html#zxc_compression_level_t	enum zxc_compression_level_t		75
+nim	zxc_cctx	zxc/bindings.html#zxc_cctx	object zxc_cctx		86
+nim	zxc_dctx	zxc/bindings.html#zxc_dctx	object zxc_dctx		88
+nim	zxc_cctxPtr	zxc/bindings.html#zxc_cctxPtr	type zxc_cctxPtr		91
+nim	zxc_dctxPtr	zxc/bindings.html#zxc_dctxPtr	type zxc_dctxPtr		92
+nim	zxc_progress_callback_t	zxc/bindings.html#zxc_progress_callback_t	type zxc_progress_callback_t		94
+nim	zxc_compress_opts_t	zxc/bindings.html#zxc_compress_opts_t	object zxc_compress_opts_t		96
+nim	zxc_decompress_opts_t	zxc/bindings.html#zxc_decompress_opts_t	object zxc_decompress_opts_t		105
+nim	zxc_min_level	zxc/bindings.html#zxc_min_level	proc zxc_min_level(): cint		111
+nim	zxc_max_level	zxc/bindings.html#zxc_max_level	proc zxc_max_level(): cint		112
+nim	zxc_default_level	zxc/bindings.html#zxc_default_level	proc zxc_default_level(): cint		113
+nim	zxc_version_string	zxc/bindings.html#zxc_version_string	proc zxc_version_string(): cstring		114
+nim	zxc_compress_bound	zxc/bindings.html#zxc_compress_bound,csize_t	proc zxc_compress_bound(input_size: csize_t): uint64		116
+nim	zxc_compress	zxc/bindings.html#zxc_compress,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress(src: pointer; src_size: csize_t; dst: pointer;\n             dst_capacity: csize_t; opts: ptr zxc_compress_opts_t): int64		117
+nim	zxc_decompress	zxc/bindings.html#zxc_decompress,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress(src: pointer; src_size: csize_t; dst: pointer;\n               dst_capacity: csize_t; opts: ptr zxc_decompress_opts_t): int64		118
+nim	zxc_get_decompressed_size	zxc/bindings.html#zxc_get_decompressed_size,pointer,csize_t	proc zxc_get_decompressed_size(src: pointer; src_size: csize_t): uint64		119
+nim	zxc_compress_block_bound	zxc/bindings.html#zxc_compress_block_bound,csize_t	proc zxc_compress_block_bound(input_size: csize_t): uint64		121
+nim	zxc_compress_block	zxc/bindings.html#zxc_compress_block,zxc_cctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress_block(cctx: zxc_cctxPtr; src: pointer; src_size: csize_t;\n                   dst: pointer; dst_capacity: csize_t;\n                   opts: ptr zxc_compress_opts_t): int64		122
+nim	zxc_decompress_block	zxc/bindings.html#zxc_decompress_block,zxc_dctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress_block(dctx: zxc_dctxPtr; src: pointer; src_size: csize_t;\n                     dst: pointer; dst_capacity: csize_t;\n                     opts: ptr zxc_decompress_opts_t): int64		123
+nim	zxc_create_cctx	zxc/bindings.html#zxc_create_cctx,ptr.zxc_compress_opts_t	proc zxc_create_cctx(opts: ptr zxc_compress_opts_t): zxc_cctxPtr		125
+nim	zxc_free_cctx	zxc/bindings.html#zxc_free_cctx,zxc_cctxPtr	proc zxc_free_cctx(cctx: zxc_cctxPtr)		126
+nim	zxc_compress_cctx	zxc/bindings.html#zxc_compress_cctx,zxc_cctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_compress_opts_t	proc zxc_compress_cctx(cctx: zxc_cctxPtr; src: pointer; src_size: csize_t;\n                  dst: pointer; dst_capacity: csize_t;\n                  opts: ptr zxc_compress_opts_t): int64		127
+nim	zxc_create_dctx	zxc/bindings.html#zxc_create_dctx	proc zxc_create_dctx(): zxc_dctxPtr		128
+nim	zxc_free_dctx	zxc/bindings.html#zxc_free_dctx,zxc_dctxPtr	proc zxc_free_dctx(dctx: zxc_dctxPtr)		129
+nim	zxc_decompress_dctx	zxc/bindings.html#zxc_decompress_dctx,zxc_dctxPtr,pointer,csize_t,pointer,csize_t,ptr.zxc_decompress_opts_t	proc zxc_decompress_dctx(dctx: zxc_dctxPtr; src: pointer; src_size: csize_t;\n                    dst: pointer; dst_capacity: csize_t;\n                    opts: ptr zxc_decompress_opts_t): int64		130
+nim	zxc_stream_compress	zxc/bindings.html#zxc_stream_compress,ptr.File,ptr.File,ptr.zxc_compress_opts_t	proc zxc_stream_compress(f_in: ptr File; f_out: ptr File;\n                    opts: ptr zxc_compress_opts_t): int64		135
+nim	zxc_stream_decompress	zxc/bindings.html#zxc_stream_decompress,ptr.File,ptr.File,ptr.zxc_decompress_opts_t	proc zxc_stream_decompress(f_in: ptr File; f_out: ptr File;\n                      opts: ptr zxc_decompress_opts_t): int64		136
+nim	zxc_stream_get_decompressed_size	zxc/bindings.html#zxc_stream_get_decompressed_size,ptr.File	proc zxc_stream_get_decompressed_size(f_in: ptr File): int64		137
+nim	zxc_error_name	zxc/bindings.html#zxc_error_name,cint	proc zxc_error_name(code: cint): cstring		139
