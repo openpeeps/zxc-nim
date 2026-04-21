@@ -62,5 +62,5 @@ _todo: example with reusable contexts and seekable archives_
 - 😎 [Get €20 in cloud credits from Hetzner](https://hetzner.cloud/?ref=Hm0mYGM9NxZ4)
 
 ### 🎩 License
-MIT license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
+BSD-3-Clause license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
 Copyright OpenPeeps & Contributors &mdash; All rights reserved.
