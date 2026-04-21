@@ -1,6 +1,7 @@
 # Bindings to ZXC compression library
-#
-# (c) 2026 George Lemon | MIT License
+# Official Repo: https://github.com/hellobertrand/zxc
+# 
+# (c) 2026 George Lemon | BSD-3 License
 #          Made by Humans from OpenPeeps
 #          https://github.com/openpeeps/zxc-nim
 
