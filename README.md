@@ -59,7 +59,6 @@ _todo: example with reusable contexts and seekable archives_
 ### ❤ Contributions & Support
 - 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/zxc-nim/issues)
 - 👋 Wanna help? [Fork it!](https://github.com/openpeeps/zxc-nim/fork)
-- 😎 [Get €20 in cloud credits from Hetzner](https://hetzner.cloud/?ref=Hm0mYGM9NxZ4)
 
 ### 🎩 License
 BSD-3-Clause license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
